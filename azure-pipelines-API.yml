@@ -7,7 +7,6 @@
 pool:
   vmImage: 'windows-latest'
 
-
 steps:
 
 - task: Gradle@2
@@ -29,3 +28,18 @@ steps:
   inputs:
     ArtifactName: 'Extent-Reports'
     PathToPublish: './target/Extent-Reports/'
+
+- task: EmailReport@1
+  inputs:
+    sendMailConditionConfig: 'Always'
+    subject: '[{environmentStatus}] {passPercentage} tests passed in $(Release.EnvironmentName) stage for $(Build.BuildNumber)'
+    toAddress: 'gaurav.jain@infostride.com'
+    includeInCcSectionStr: '1'
+    ccAddress: 'ankit.kumar@infostride.com'
+    defaultDomain: 'microsoft.com'
+    groupTestResultsBy: 'run'
+    includeCommits: true
+    maxTestFailuresToShow: '15'
+    includeOthersInTotal: true
+    usePreviousEnvironment: false
+    smtpConnectionEndpoint: 'INFOSMTP'
