@@ -35,7 +35,7 @@ steps:
     subject: '[{environmentStatus}] {passPercentage} tests passed in $(Release.EnvironmentName) stage for $(Build.BuildNumber)'
     toAddress: 'gaurav.jain@infostride.com'
     includeInCcSectionStr: '1'
-    ccAddress: 'gulshan.kumar@infostride.com'
+    ccAddress: 'ankit.kumar@infostride.com'
     defaultDomain: 'microsoft.com'
     groupTestResultsBy: 'run'
     includeCommits: true
