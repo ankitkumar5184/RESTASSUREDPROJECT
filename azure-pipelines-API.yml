@@ -12,8 +12,8 @@ variables:
 
 steps:
   -script: 
-        echo "env $(ENV)"
-    displayName: 'show variavles from gp'
+      echo "env $(ENV)"
+   displayName: 'show variavles from gp'
 - task: Gradle@2
   inputs:
     gradleWrapperFile: 'gradlew'
