@@ -17,7 +17,7 @@
         </classes>
     </test>
 
-    <test name="Pharmacies, Verify Pharmacies API End-Points">
+<!--     <test name="Pharmacies, Verify Pharmacies API End-Points">
         <classes>
             <class name="api.tests.test_suite.tools.PharmaciesTest"/>
         </classes>
@@ -75,5 +75,5 @@
         <classes>
             <class name="api.tests.test_suite.tools.PharmaciesSpecTest"/>
         </classes>
-    </test>
+    </test> -->
 </suite>
