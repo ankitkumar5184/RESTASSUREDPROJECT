@@ -6,6 +6,9 @@
 
 pool:
   vmImage: 'windows-latest'
+variables:
+- name:QA
+  value:$[variables.QA]
 
 steps:
 
