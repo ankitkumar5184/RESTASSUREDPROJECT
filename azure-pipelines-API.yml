@@ -7,10 +7,12 @@
 pool:
   vmImage: 'windows-latest'
 variables:
-- name:QA
-  value:$[variables.QA]
+  - group : TESTING
 
 steps:
+  - script: 
+        echo "env $(ENV)"
+    displayName: 'show variavles from gp'
 
 - task: Gradle@2
   inputs:
