@@ -33,7 +33,7 @@ steps:
   inputs:
     sendMailConditionConfig: 'Always'
     subject: '[{environmentStatus}] {passPercentage} tests passed in $(Release.EnvironmentName) stage for $(Build.BuildNumber)'
-    toAddress: 'gaurav.jain@infostride.com'
+    toAddress: 'saurav.sharma@infostride.com'
     includeInCcSectionStr: '1'
     ccAddress: 'ankit.kumar@infostride.com'
     defaultDomain: 'microsoft.com'
